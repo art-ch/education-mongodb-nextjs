@@ -1,6 +1,6 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model, models } from 'mongoose';
 
-const storySchema = new Schema({
+const noteSchema = new Schema({
   title: {
     type: String,
     required: [true, 'Title is Required'],
@@ -14,4 +14,6 @@ const storySchema = new Schema({
   }
 });
 
-const Story = model('Story', storySchema);
+const Note = models.notes || model('notes', noteSchema);
+
+export default Note;
