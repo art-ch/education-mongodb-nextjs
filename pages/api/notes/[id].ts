@@ -15,7 +15,6 @@ const singleNoteHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     case 'GET':
       try {
         const note = await Note.findById(id);
-        console.log(note);
 
         if (!note) {
           return res.status(400).json({ success: false });

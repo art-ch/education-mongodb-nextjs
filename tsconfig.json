@@ -25,7 +25,9 @@
     "**/*.tsx",
     "utils/connectDB.ts",
     "utils/connectDB.ts",
-    "utils/connectDB.tjs"
+    "utils/connectDB.tjs",
+    "pages/new.js",
+    "pages/[id]/edit.js"
   ],
   "exclude": [
     "node_modules"
